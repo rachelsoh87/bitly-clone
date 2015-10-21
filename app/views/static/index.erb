@@ -1,9 +1,15 @@
-<h1>Hello World</h1>
+<h1>Hey There!</h1>
+<h2>Welcome to Chomped! </h2>
+<h2>Submit a long url and we'll customize a shorter url for you!</h2>
 
 <%# <p>See Me in views/static/index.html.erb</p> %>
 
-<form action = "#" method = "">
+<form action = "/urls" method = "POST">
     Enter URL:
     <input type = "text" name = "long_url">
     <input type = "submit" value = "Submit">
 </form>
+
+<% @urls.each do |url| %>
+<%= url.shortened_url %><br>
+<% end %>
