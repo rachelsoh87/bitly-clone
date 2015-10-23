@@ -1,0 +1,34 @@
+ hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    } 
+
+table{ 
+    background-color: #D3D3D3;
+    }
+        
+.break-word {
+    word-wrap: break-word;
+    width: 500px;
+    }
+
+table, th, td {
+    border: 1px solid #B8B8B8;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    }
+
+th, td {
+    padding: 15px;
+    }
+    
+.seksyen {
+    text-align: center;
+    background-color: #C1FDC1;
+}
+

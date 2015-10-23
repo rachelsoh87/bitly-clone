@@ -1,3 +1,30 @@
-<h1> YOOOOO </h1>
-Here is your original long url: <%=@url.longer_url%><br>
-Here is your new shortened url: <%=@url.shortened_url%>
+    <h2> Success! </h2>
+      Your original long url: <a href> <%=@url.longer_url%><br/> </a>
+      Your new shortened url: <a href= "/<%=@url.shortened_url%>"> = <%=@url.shortened_url%> </a><br/>
+      <br/>
+      Your collection of shortened urls:<br/><br/>
+
+      <div style="">
+      <table style="table-layout: fixed; width: 90%; margin: 0 auto;">      
+      <tr>
+        <th width = "10%">Url Database ID</th>
+        <th width = "20%">Short Url</th>
+        <th width = "60%">Long Url</th>
+        <th width = "10%">Click Count</th>
+      </tr>
+
+      <tr><%@all_url.each do |url|%></tr>
+      <td><%= url.id%></td>
+      <td><a href= "/<%=url.shortened_url%>">= <%= url.shortened_url%></a></td> 
+      <td class="break-word"><a href = <%=url.longer_url %>><%= url.longer_url %></a></td>
+      <td><%= url.click_count %></td>
+      <%end%>
+      </table>
+      </div>
+
+
+
+
+
+
+
